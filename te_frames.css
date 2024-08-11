@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/* 
+    Styles for website joshsimpson.info. All rights reserved.
+    Author: Joshua Simpson
+    
+    08/09/2021: Initial creation
+*/
+
+/* Frame Styles */
+
+html {
+    width: 100%;
+    min-width: 560px;
+}
+
+body {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+
+}
+
+/* BEGIN BODY HEADER FRAME STYLES */
+body > header {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+body > header::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+img#headshot {
+    display: block;
+    float: left;
+    height: 110px;
+    width: auto;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+body > header > h1 {
+    padding-top: 30px;
+}
+/* END BODY HEADER FRAME STYLE */
+
+/* BEGIN HORIZONAL NAV FRAME STYLES */
+nav {
+    clear: both;
+    line-height: 25px;
+}
+
+nav > ul {
+    width: auto;
+}
+
+nav > ul > li {
+    float: left;
+    width: 20%;
+    padding: 2px 0px;
+    margin-left: 4px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    border: 1px solid white;
+    width: 98%;
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    border: 1px solid white;
+    width: 98%;
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+nav > ul::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* END HORIZONTAL NAV FRAME STYLES */
+
+/* BEGIN FRAME STYLE FOR ALL PAGES */
+div.content {
+    width: 55%;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px 5px;
+    min-width: 475px;
+}
+
+aside.comments {
+    width: 40%;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px 5px;
+    min-width: 350px;
+}
+
+aside.comments > h2 {
+    margin: 1rem auto;
+}
+
+aside.comments > p {
+    text-align: left;
+    margin: 1rem 5%;
+}
+
+/* HOME PAGE CONTENT FRAME STYLE */
+figure#portrait {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#selfport {
+    width: auto;
+    max-width: 400px;
+    border: solid black;
+    border-width: 1px 1px 0px 1px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    vertical-align: middle;
+}
+
+figure#portrait > figcaption {
+    border: solid black;
+    border-width: 0px 1px 1px 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* TECHNOLOGY PAGE */
+
+section.post {
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.pstHeader > h2 {
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+p.pstMetaBar {
+    width: 90%;
+    text-align: left;
+    margin: 1rem auto;
+}
+
+span.pstMetaData {
+    float: right;
+}
+
+section.post > p { 
+    text-align: left; 
+    margin: 1rem;
+}
+
+iframe {
+    margin: 10px auto;
+    width: 400px;
+    height: 275px;
+    border-radius: 4px;
+}
+
+/* BEGIN EXPLORATION PAGE */
+
+section.collection {
+    width: 95%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section.collection::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div.center {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+div.center::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section.collection > a {
+    display: block;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+figure.colItem {
+    float: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px;
+    width: 200px;
+}
+
+img.collPhoto {
+    width: 100%;
+}
+
+figcaption.collCap {
+    margin: 1rem;
+}
+
+/* BEGIN CONTACT PAGE FRAME STYLE */
+
+/* TABLE STYLE */
+table#resume {
+    width: 95%;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+table#resume tr {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+#resume #resTitle {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+td.resSubtitle:first-of-type {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+td.resSubtitle:last-of-type {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+td.resSpace {
+    display: block;
+    margin: 20px;
+}
+
+li.resResp, li.resSkill {
+    margin-left: 2rem;
+    margin-top: .5rem;
+}
+
+/* SIDEBAR STYLE */
+
+aside section{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section#resLink::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section#resLink h2 {
+    display: block;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+section#resLink a {    
+    clear: left;
+    display: block;
+    margin: 1rem auto;
+
+}
+
+section#accolades h2 {
+    display: block;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+blockquote.recommend {
+    margin: 1rem;
+}
+
+p.colleague {
+    margin-bottom: 1rem;
+}
+
+/* BEGIN FOOTER FRAME STYLE */
+body > footer {
+    clear: both;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+}
+
+body > footer > p {
+    width: 100%;
+}
+/* END FOOTER FRAME STYLE */

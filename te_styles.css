@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* 
+    Styles for website joshsimpson.info. All rights reserved.
+    Author: Joshua Simpson
+    
+    08/09/2021: Initial creation
+*/
+
+/* Content Styles */
+
+/* CONTENT STYLES FOR ALL PAGES */
+html {
+    background-color: rgb(200, 200, 200);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+}
+
+body {
+    background-color: rgb(150, 150, 150);
+    box-shadow: 0px 0px 15px;
+}
+
+/* BEGIN TITLE HEADER CONTENT STYLE */
+body > header {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0), black), 
+    url(img/headerbg.png);
+    background-size: cover;
+}
+
+body > header > h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+/* BEGIN HORIZONTAL NAV CONTENT STYLE */
+nav {
+    background-color: rgb(35, 35, 35);
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    text-align: center;
+    color: white;
+    background-color: rgb(55, 55, 55);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    text-align: center;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+
+/* BEGIN PAGE CONTENT STYLES */
+
+/* ALL PAGES */
+div.content {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 5px rgb(35, 35, 35);
+}
+
+aside.comments {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 5px rgb(35, 35, 35);
+}
+
+/* CONTACT PAGE STYLES */
+
+#resume #resTitle {
+    font-size: 2.5em;
+    color: rgb(185, 55, 55);
+    font-weight: bold;
+}
+
+#resume #resStatement {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#resume #resAdd {
+    font-size: 0.95em;
+}
+
+#resume #resEmail > a:link, #resume #resEmail > a:active {
+    font-size: 0.95em;
+    color: rgb(0, 0, 200);
+    text-decoration: none;
+}
+
+#resume #resEmail > a:hover, #resume #resEmail > a:visited {
+    font-size: 0.95em;
+    color: rgb(200, 0, 0);
+    text-decoration: none;
+}
+
+#resume #resPhone {
+    font-size: 0.95em;
+}
+
+#resume #resPhone > a:link, #resume #resPhone > a:active {
+    font-size: 0.95em;
+    color: rgb(0, 0, 200);
+    text-decoration: none;
+}
+
+#resume #resPhone > a:hover, #resume #resPhone > a:visited {
+    font-size: 0.95em;
+    color: rgb(200, 0, 0);
+    text-decoration: none;
+}
+
+#resume #resMission {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+#resume .resSubtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#resume .resJobTitle{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: rgb(55, 55, 55);
+}
+
+#resume .resJobLoc {
+    font-size: .95em;
+    font-style: italic;
+}
+
+#resume .resResp, #resume .resSkill {
+    font-size: 0.95em;
+}
+
+#resume .resMajor {
+    font-weight: bold;
+} 
+
+#resume .resHist {
+    font-size: .95em;
+}
+
+span.resSchool {
+    font-weight: bold;
+    color: rgb(85, 85, 85)
+}
+
+
+blockquote.recommend {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+aside blockquote::before {
+    content: open-quote;
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+aside blockquote::after {
+    content: close-quote;
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.colleague {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+/* BEGIN PAGE FOOTER CONTENT STYLE */
+body > footer {
+   background-color: rgb(55, 55, 55);
+}
+
+body > footer > p {
+    color: rgb(200, 200, 200);
+    font-size: 0.8em;
+    text-align: center;
+}
