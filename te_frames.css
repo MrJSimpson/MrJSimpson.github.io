@@ -236,3 +236,84 @@ body > footer {
 body > footer > p {
     width: 100%;
 }
+
+/* --- MOBILE RESPONSIVE MEDIA QUERY --- */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    body > header {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    img#headshot {
+        float: none;
+        margin: 0 auto 1rem auto;
+    }
+
+    body > header > h1 {
+        padding-top: 0;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    /* Stack Navigation Vertically on Mobile */
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul > li {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav > ul > li > a:link, nav > ul > li > a:visited {
+        padding: 14px 1.5rem;
+        border-bottom: 1px solid #1a202c;
+    }
+
+    /* Stack Columns Into a Single Vertical Feed */
+    .content {
+        width: 100%;
+        float: none;
+        padding: 1.5rem 1rem;
+    }
+
+    aside.comments {
+        width: 100%;
+        float: none;
+        padding: 1.5rem 1rem;
+    }
+
+    /* Optimize Resume View for Touch Screens */
+    table#resume {
+        margin: 0 auto;
+    }
+
+    #resume #resTitle {
+        font-size: 1.8em;
+    }
+
+    li.resResp, li.resSkill {
+        margin-left: 1rem;
+    }
+
+    /* Adaptive Grid for Photo Galleries */
+    .center {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        grid-gap: 12px;
+    }
+
+    figure.colItem {
+        margin: 0;
+    }
+
+    /* Keep Footer Grounded and Clean */
+    body > footer {
+        padding: 1.5rem 1rem;
+    }
+}
