@@ -130,8 +130,15 @@ blockquote.recommend {
     font-size: 1rem;
     color: #4a5568;
     line-height: 1.6;
-    border-left: 3px solid #3182ce; /* Elegant callout border instead of hardcoded raw quotes */
-    padding-left: 1rem;
+    border-left: 3px solid #3182ce; /* Elegant callout border */
+    padding-left: 1.25rem; /* FIXED: Pushes text safely away from the vertical line line */
+    margin: 1rem 0; /* Cleans up vertical container margins */
+}
+
+/* Resume List Spacing */
+#resume li {
+    line-height: 1.6; /* Adds comfortable breathing room between text lines */
+    margin-bottom: 0.6rem; /* Distributes vertical spacing between individual bullets */
 }
 
 /* Modernized Footer */
